@@ -1,3 +1,4 @@
+
 # Exercise 1: Basic Calculator Functions
 from typing import Union
 
@@ -16,8 +17,10 @@ def add(a: Number, b: Number) -> Number:
     Returns:
         The sum of a and b
     """
-    # TODO: Implement this function
-    pass
+    try :
+        return a + b
+    except Exception :
+        return "Avez vous tapez des nombres ? "
 
 
 def subtract(a: Number, b: Number) -> Number:
@@ -31,8 +34,10 @@ def subtract(a: Number, b: Number) -> Number:
     Returns:
         The result of a - b
     """
-    # TODO: Implement this function
-    pass
+    try : 
+        return a - b
+    except Exception :
+        return "Avez vous tapez des nombres ? "
 
 
 def multiply(a: Number, b: Number) -> Number:
@@ -46,8 +51,10 @@ def multiply(a: Number, b: Number) -> Number:
     Returns:
         The product of a and b
     """
-    # TODO: Implement this function
-    pass
+    try :
+        return a * b
+    except Exception :
+        return "Avez vous tappez des nombres ?"
 
 
 def divide(a: Number, b: Number) -> Number:
@@ -64,5 +71,9 @@ def divide(a: Number, b: Number) -> Number:
     Raises:
         ValueError: If b is 0
     """
-    # TODO: Implement this function
-    pass
+    if b == 0 :
+        raise  "Cannot divide by zero " 
+    try :
+        return a / b
+    except Exception : 
+        print ( "avez vous tapez des nombres ?")
